@@ -1,0 +1,21 @@
+[project]
+name = "remindmez"
+version = "1.0.0"
+description = "CLI reminder tool with ASCII penguins, notifications, and sound 🐧"
+authors = [
+  { name="Penguin-Dev93"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "pyfiglet",
+  "plyer"
+]
+
+[project.scripts]
+remindmez = "remindmez.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
