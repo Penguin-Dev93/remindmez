@@ -39,11 +39,11 @@ def send_notification(title, message):
     )
 
 def show_reminder(reminder_text):
-    print("\n" + figlet_format("remindmez", font="slant"))
     print(PENGUIN_ASCII)
     print(f"🐧 Reminder: {reminder_text}")
     threading.Thread(target=play_sound).start()
     send_notification("remindmez 🐧", reminder_text)
+
 
 def main():
     parser = argparse.ArgumentParser(
