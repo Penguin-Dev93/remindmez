@@ -16,6 +16,9 @@ dependencies = [
 [project.scripts]
 remindmez = "remindmez.cli:main"
 
+[project.optional-dependencies]
+notifications = ["dbus-python"]
+
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
