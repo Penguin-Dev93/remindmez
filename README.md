@@ -11,19 +11,22 @@ When it's time, your reminder will pop up in the terminal as a penguin along wit
 
 ---
 
-## 📦 Features
-
-- 🐧 Penguin ASCII art reminder
-- 🎨 PyFiglet stylized headers
-- 🔔 System notifications (cross-platform)
-- 🔊 Optional sound alert
-- 💻 CLI support with `--version` and `--help`
-
----
-
 ## 🚀 Installation
 
 Install via `pipx` (recommended):
 
 ```bash
-pipx install git+https://github.com/yourusername/remindmez
+pipx install git+https://github.com/Penguin-Dev93/remindmez
+
+# ⚠️ If you see the warning:
+# UserWarning: The Python dbus package is not installed
+# You may need to manually install it depending on your system:
+
+# For Arch-based systems:
+sudo pacman -S python-dbus
+
+# For Debian/Ubuntu-based systems:
+sudo apt install python-dbus
+
+# Then, inject dbus-python into the remindmez venv:
+pipx inject remindmez dbus-python
