@@ -2,11 +2,17 @@
 
 import time
 import argparse
-from pyfiglet import figlet_format
-from plyer import notification
 import os
 import platform
 import threading
+
+try:
+    from plyer import notification
+except ImportError:
+    notification = None
+
+from pyfiglet import figlet_format
+
 
 PENGUIN_ASCII = r"""
       __
@@ -32,17 +38,21 @@ def play_sound():
         print(f"(Sound failed: {e})")
 
 def send_notification(title, message):
+    system = platform.system()
     try:
-        notification.notify(
-            title=title,
-            message=message,
-            timeout=10
-        )
-    except NotImplementedError:
-        pass  # Notification unsupported on macOS without pyobjus
+        if system == "Darwin":
+            subprocess.run([
+                "osascript", "-e",
+                f'display notification "{message}" with title "{title}"'
+            ])
+        else:
+            notification.notify(
+                title=title,
+                message=message,
+                timeout=10
+            )
     except Exception as e:
-        print(f"🐧 Could not send notification: {e}")
-
+        print(f"🐧 Notification error: {e}")
 def show_reminder(reminder_text):
     print(PENGUIN_ASCII)
     print(f"🐧 Reminder: {reminder_text}")
