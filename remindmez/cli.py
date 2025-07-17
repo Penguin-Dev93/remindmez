@@ -9,12 +9,12 @@ import platform
 import threading
 
 PENGUIN_ASCII = r"""
-     __
- -=(o '.
-     '.-. \
-     /|   \ \
-     '|   | |
-     _\_): , _
+      __
+   -=(o '.
+      '.-.\
+     /|   \\
+     '|   ||
+     _\_):,_
 """
 
 VERSION = "1.0.0"
