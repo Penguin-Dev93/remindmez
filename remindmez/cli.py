@@ -32,11 +32,16 @@ def play_sound():
         print(f"(Sound failed: {e})")
 
 def send_notification(title, message):
-    notification.notify(
-        title=title,
-        message=message,
-        timeout=10
-    )
+    try:
+        notification.notify(
+            title=title,
+            message=message,
+            timeout=10
+        )
+    except NotImplementedError:
+        pass  # Notification unsupported on macOS without pyobjus
+    except Exception as e:
+        print(f"🐧 Could not send notification: {e}")
 
 def show_reminder(reminder_text):
     print(PENGUIN_ASCII)
