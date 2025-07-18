@@ -14,8 +14,8 @@ When it's time, your reminder will pop up in the terminal as a penguin along wit
 
 ## 🚀 Installation
 
-Install from the AUR (recommended):
 
+#Install from the AUR (recommended):
 ```bash
 yay -S remindmez
 ---------------------------------------------
