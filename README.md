@@ -1,6 +1,7 @@
 # 🐧 remindmez
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![AUR](https://img.shields.io/aur/version/remindmez)](https://aur.archlinux.org/packages/remindmez)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Install with pipx](https://img.shields.io/badge/Install%20with-pipx-blue?logo=pip)](https://github.com/Penguin-Dev93/remindmez)
 [![GitHub Stars](https://img.shields.io/github/stars/Penguin-Dev93/remindmez?style=social)](https://github.com/Penguin-Dev93/remindmez/stargazers)
@@ -13,7 +14,14 @@ When it's time, your reminder will pop up in the terminal as a penguin along wit
 
 ## 🚀 Installation
 
-Install via `pipx` (recommended):
+### Arch Linux / Manjaro
+
+Install from the AUR (recommended):
+
+```bash
+yay -S remindmez
+
+Install via `pipx` (recommended for non Arch systems):
 
 ```bash
 pipx install git+https://github.com/Penguin-Dev93/remindmez
