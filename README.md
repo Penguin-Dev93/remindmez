@@ -14,12 +14,11 @@ When it's time, your reminder will pop up in the terminal as a penguin along wit
 
 ## 🚀 Installation
 
-### Arch Linux / Manjaro
-
 Install from the AUR (recommended):
 
 ```bash
 yay -S remindmez
+---------------------------------------------
 
 Install via `pipx` (recommended for non Arch systems):
 
