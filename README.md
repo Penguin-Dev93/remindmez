@@ -14,27 +14,36 @@ When it's time, your reminder will pop up in the terminal as a penguin along wit
 
 ## 🚀 Installation
 
-
+### 📦 Install from the AUR (recommended for Arch-based systems)
 
 ```bash
-#Install from the AUR (recommended):
 yay -S remindmez
----------------------------------------------
+```
 
-Install via `pipx` (recommended for non Arch systems):
+---
+
+### 🌐 Install via `pipx` (recommended for non-Arch systems)
 
 ```bash
 pipx install git+https://github.com/Penguin-Dev93/remindmez
+```
 
-# ⚠️ If you see the warning:
-# UserWarning: The Python dbus package is not installed
-# You may need to manually install it depending on your system:
+> ⚠️ If you see the warning:  
+> `UserWarning: The Python dbus package is not installed`  
+> You may need to manually install it depending on your system:
 
-# For Arch-based systems:
+#### For Arch-based systems:
+```bash
 sudo pacman -S python-dbus
+```
 
-# For Debian/Ubuntu-based systems:
+#### For Debian/Ubuntu-based systems:
+```bash
 sudo apt install python-dbus
+```
 
-# Then, inject dbus-python into the remindmez venv:
+Then, inject `dbus-python` into the remindmez venv:
+
+```bash
 pipx inject remindmez dbus-python
+```
