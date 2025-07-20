@@ -5,6 +5,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Install with pipx](https://img.shields.io/badge/Install%20with-pipx-blue?logo=pip)](https://github.com/Penguin-Dev93/remindmez)
 [![GitHub Stars](https://img.shields.io/github/stars/Penguin-Dev93/remindmez?style=social)](https://github.com/Penguin-Dev93/remindmez/stargazers)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-yellow?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/penguin.dev93)
+
 
 **remindmez** is a fun and simple Python CLI tool that reminds you of anything — with ASCII penguins, system notifications, and a little bit of flair.
 
