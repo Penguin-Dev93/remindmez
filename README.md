@@ -26,7 +26,7 @@ yay -S remindmez
 
 ---
 
-### 🌐 Install via `pipx` (recommended for non-Arch systems)
+### 🌐 Install via `pipx` (recommended for non-Arch Linux Systems and MaCOS)
 
 ```bash
 pipx install git+https://github.com/Penguin-Dev93/remindmez
